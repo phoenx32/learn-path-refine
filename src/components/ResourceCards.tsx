@@ -7,7 +7,7 @@ const resources = [
     title: "Online Course",
     description: "Self-paced online course for educators and program staff",
     icon: GraduationCap,
-    action: "Start",
+    action: "Enroll",
   },
   {
     title: "Facilitator's Guide",
