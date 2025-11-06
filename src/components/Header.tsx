@@ -1,72 +1,113 @@
-import { Search } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Search, ChevronDown } from "lucide-react";
 
 const Header = () => {
   return (
     <header className="w-full">
-      {/* Top bar with logo and search */}
-      <div className="bg-[hsl(var(--header-bg))] text-white">
-        <div className="container mx-auto px-4 py-3">
+      {/* Top bar with small logo, login, and search */}
+      <div className="bg-[#4A8FBD] text-white">
+        <div className="max-w-[1400px] mx-auto px-6 py-2.5">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <img 
                 src="https://otan.us/images/otan-logo.png" 
-                alt="OTAN Logo" 
-                className="h-12 w-auto"
+                alt="OTAN Icon" 
+                className="h-10 w-10"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
                 }}
               />
-              <div>
-                <div className="font-bold text-xl">OTAN</div>
-                <div className="text-xs opacity-90">Outreach and Technical Assistance Network</div>
-              </div>
-            </div>
-            <div className="flex items-center gap-4">
-              <div className="relative hidden md:flex items-center">
-                <Input
-                  type="search"
-                  placeholder="Search..."
-                  className="bg-white text-foreground w-64"
-                />
-                <Search className="absolute right-3 h-4 w-4 text-muted-foreground" />
-              </div>
-              <Button variant="ghost" className="text-white hover:bg-white/10">
+              <a href="/" className="text-white text-base hover:underline">
                 Join OTAN / Login
-              </Button>
+              </a>
+            </div>
+            <div className="flex items-center">
+              <div className="bg-white rounded-sm overflow-hidden flex items-center">
+                <input
+                  type="search"
+                  placeholder="search"
+                  className="px-3 py-2 text-sm text-gray-700 outline-none w-[280px]"
+                  style={{ 
+                    backgroundImage: 'url("https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_74x24dp.png")',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: '8px center',
+                    backgroundSize: '70px',
+                    paddingLeft: '90px'
+                  }}
+                />
+                <button className="bg-[#4285F4] px-4 py-2 hover:bg-[#3367D6]">
+                  <Search className="h-5 w-5 text-white" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Navigation bar */}
-      <nav className="bg-[hsl(var(--header-nav))] text-white">
-        <div className="container mx-auto px-4">
-          <ul className="flex items-center gap-6 py-3 text-sm">
+      {/* Large centered logo and tagline */}
+      <div className="bg-[#4A8FBD] text-white pt-4 pb-6">
+        <div className="max-w-[1400px] mx-auto px-6 text-center">
+          <div className="flex flex-col items-center justify-center">
+            <img 
+              src="https://otan.us/images/otan-logo.png" 
+              alt="OTAN Logo" 
+              className="h-32 mb-2"
+              onError={(e) => {
+                e.currentTarget.style.display = 'none';
+              }}
+            />
+            <h1 className="text-5xl font-bold text-white mb-1" style={{ 
+              fontFamily: 'Impact, "Arial Black", sans-serif',
+              letterSpacing: '0.05em',
+              textShadow: '2px 2px 4px rgba(0,0,0,0.3)'
+            }}>
+              OTAN
+            </h1>
+            <div className="text-lg font-semibold mb-4" style={{ 
+              fontFamily: '"Arial Black", sans-serif',
+              fontStyle: 'italic',
+              textShadow: '1px 1px 2px rgba(0,0,0,0.3)'
+            }}>
+              Outreach and Technical Assistance Network
+            </div>
+          </div>
+          <p className="text-lg italic mt-4" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>
+            Leading adult education through support for and the effective application of technology.
+          </p>
+        </div>
+      </div>
+
+      {/* Navigation bar with dropdowns */}
+      <nav className="bg-[#1E3A5F] text-white border-b-4 border-[#4A8FBD]">
+        <div className="max-w-[1400px] mx-auto px-6">
+          <ul className="flex items-center justify-center gap-8 py-3.5">
             <li>
-              <a href="/" className="hover:text-primary-foreground transition-colors">
+              <a href="/" className="flex items-center gap-1 text-base hover:text-gray-200 transition-colors">
                 About Us
+                <ChevronDown className="h-4 w-4" />
               </a>
             </li>
             <li>
-              <a href="/" className="hover:text-primary-foreground transition-colors">
+              <a href="/" className="flex items-center gap-1 text-base hover:text-gray-200 transition-colors">
                 Professional Development
+                <ChevronDown className="h-4 w-4" />
               </a>
             </li>
             <li>
-              <a href="/" className="hover:text-primary-foreground transition-colors font-semibold">
+              <a href="/" className="flex items-center gap-1 text-base hover:text-gray-200 transition-colors">
                 Resources
+                <ChevronDown className="h-4 w-4" />
               </a>
             </li>
             <li>
-              <a href="/" className="hover:text-primary-foreground transition-colors">
+              <a href="/" className="flex items-center gap-1 text-base hover:text-gray-200 transition-colors">
                 Stay Connected
+                <ChevronDown className="h-4 w-4" />
               </a>
             </li>
             <li>
-              <a href="/" className="hover:text-primary-foreground transition-colors">
+              <a href="/" className="flex items-center gap-1 text-base hover:text-gray-200 transition-colors">
                 Video Presentations
+                <ChevronDown className="h-4 w-4" />
               </a>
             </li>
           </ul>
@@ -74,14 +115,14 @@ const Header = () => {
       </nav>
 
       {/* Breadcrumb */}
-      <div className="bg-secondary border-b">
-        <div className="container mx-auto px-4 py-3">
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <a href="/" className="hover:text-primary transition-colors">Home</a>
+      <div className="bg-gray-100 border-b">
+        <div className="max-w-[1400px] mx-auto px-6 py-3">
+          <div className="flex items-center gap-2 text-sm text-gray-600">
+            <a href="/" className="text-[#4A8FBD] hover:underline">Home</a>
             <span>/</span>
-            <a href="/resources" className="hover:text-primary transition-colors">Resources</a>
+            <a href="/resources" className="text-[#4A8FBD] hover:underline">Resources</a>
             <span>/</span>
-            <span className="text-foreground font-medium">Digital Learning Guidance</span>
+            <span className="text-gray-800">Digital Learning Guidance</span>
           </div>
         </div>
       </div>
