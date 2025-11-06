@@ -35,6 +35,15 @@ const ChapterList = () => {
             ))}
           </div>
         </Card>
+        
+        <div className="mt-4 text-center">
+          <a 
+            href="#glossary" 
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors underline inline-flex items-center gap-1"
+          >
+            See Key Terms & Glossary
+          </a>
+        </div>
       </div>
     </section>
   );

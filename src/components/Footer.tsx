@@ -123,6 +123,8 @@ const Footer = () => {
               <a href="/" className="hover:underline">Accessibility</a>
               <span>|</span>
               <a href="/" className="hover:underline">Sitemap</a>
+              <span>|</span>
+              <a href="#references" className="hover:underline">References & Sources</a>
             </div>
           </div>
           <div className="text-center text-xs text-gray-400 leading-relaxed">
