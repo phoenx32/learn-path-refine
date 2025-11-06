@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { FileDown, BookOpen } from "lucide-react";
+import { FileDown, BookOpen, Compass } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -21,6 +21,12 @@ const HeroSection = () => {
             <Button size="lg" variant="outline" className="gap-2">
               <FileDown className="h-5 w-5" />
               Download PDF
+            </Button>
+            <Button size="lg" variant="outline" className="gap-2" asChild>
+              <a href="#key-resources">
+                <Compass className="h-5 w-5" />
+                Explore PD Resources
+              </a>
             </Button>
           </div>
         </div>
