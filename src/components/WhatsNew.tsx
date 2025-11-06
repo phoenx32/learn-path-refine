@@ -27,6 +27,15 @@ const WhatsNew = () => {
             </Button>
           </div>
         </Card>
+        
+        <div className="mt-4 text-center">
+          <a 
+            href="#" 
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors underline"
+          >
+            Access 2022 version
+          </a>
+        </div>
       </div>
     </section>
   );
