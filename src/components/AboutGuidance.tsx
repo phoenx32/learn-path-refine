@@ -27,7 +27,7 @@ const AboutGuidance = () => {
   return (
     <section className="py-8 bg-background">
       <div className="container mx-auto px-4">
-        <h3 className="text-xl font-semibold text-foreground mb-4">Project Background</h3>
+        <h3 className="text-xl font-semibold text-foreground mb-4">About the Guidance</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {aboutLinks.map((link) => {
             const Icon = link.icon;
