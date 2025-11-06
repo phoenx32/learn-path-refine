@@ -29,7 +29,7 @@ const resources = [
   },
   {
     title: "Literature Review",
-    description: "Curated research on digital and distance learning that informed the writing of the guidance",
+    description: "Summaries of research that informed the Guidance",
     icon: Briefcase,
     action: "Browse",
   },

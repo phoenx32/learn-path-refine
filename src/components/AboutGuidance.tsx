@@ -5,21 +5,21 @@ import { FileText, Users, BookMarked } from "lucide-react";
 const aboutLinks = [
   {
     title: "About the Guidance",
-    description: "Learn about the project's mission and goals",
+    description: "Learn about the project's history and goals",
     icon: FileText,
     href: "#about",
-  },
-  {
-    title: "Acknowledgments",
-    description: "Contributors and partners",
-    icon: Users,
-    href: "#acknowledgments",
   },
   {
     title: "Foreword",
     description: "Introduction from project leadership",
     icon: BookMarked,
     href: "#foreword",
+  },
+  {
+    title: "Key Terms & Glossary",
+    description: "Definitions and terminology",
+    icon: Users,
+    href: "#glossary",
   },
 ];
 
