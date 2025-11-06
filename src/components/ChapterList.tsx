@@ -5,10 +5,10 @@ const chapters = [
   { number: 1, title: "Introduction" },
   { number: 2, title: "Ensuring Equity and Access" },
   { number: 3, title: "Foundations of Adult Education and Digital Learning" },
-  { number: 4, title: "Designing Flexible Learning Experiences" },
+  { number: 4, title: "Digital Learning Tools" },
   { number: 5, title: "Adopting Models that Work" },
   { number: 6, title: "Data-Driven Instruction and Digital Assessments" },
-  { number: 7, title: "Fostering Healthy, Equitable, and Inclusive Digital Co-learning" },
+  { number: 7, title: "Fostering Healthy, Equitable, and Inclusive Digital Communities" },
   { number: 8, title: "Artificial Intelligence" },
 ];
 
