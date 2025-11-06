@@ -13,13 +13,13 @@ const resources = [
     title: "Facilitator's Guide",
     description: "Resources for workshop facilitators and trainers",
     icon: Users,
-    action: "Explore",
+    action: "Access",
   },
   {
     title: "Reader's Guides",
     description: "Chapter summaries and discussion questions",
     icon: BookOpen,
-    action: "Read",
+    action: "Explore",
   },
   {
     title: "Podcasts and Videos",
