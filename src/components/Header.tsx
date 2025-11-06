@@ -1,4 +1,5 @@
 import { Search, ChevronDown } from "lucide-react";
+import otanLogoFull from "@/assets/otan-logo-full.png";
 
 const Header = () => {
   return (
@@ -8,14 +9,6 @@ const Header = () => {
         <div className="max-w-[1400px] mx-auto px-6 py-2.5">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <img 
-                src="https://otan.us/images/otan-logo.png" 
-                alt="OTAN Icon" 
-                className="h-10 w-10"
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none';
-                }}
-              />
               <a href="/" className="text-white text-base hover:underline">
                 Join OTAN / Login
               </a>
@@ -48,27 +41,10 @@ const Header = () => {
         <div className="max-w-[1400px] mx-auto px-6 text-center">
           <div className="flex flex-col items-center justify-center">
             <img 
-              src="https://otan.us/images/otan-logo.png" 
-              alt="OTAN Logo" 
-              className="h-32 mb-2"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none';
-              }}
+              src={otanLogoFull} 
+              alt="OTAN - Outreach and Technical Assistance Network" 
+              className="h-32 mb-6"
             />
-            <h1 className="text-5xl font-bold text-white mb-1" style={{ 
-              fontFamily: 'Impact, "Arial Black", sans-serif',
-              letterSpacing: '0.05em',
-              textShadow: '2px 2px 4px rgba(0,0,0,0.3)'
-            }}>
-              OTAN
-            </h1>
-            <div className="text-lg font-semibold mb-4" style={{ 
-              fontFamily: '"Arial Black", sans-serif',
-              fontStyle: 'italic',
-              textShadow: '1px 1px 2px rgba(0,0,0,0.3)'
-            }}>
-              Outreach and Technical Assistance Network
-            </div>
           </div>
           <p className="text-lg italic mt-4" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>
             Leading adult education through support for and the effective application of technology.
