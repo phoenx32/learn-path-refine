@@ -58,7 +58,7 @@ const ResourceCards = () => {
                   <p className="text-sm text-muted-foreground min-h-[4rem]">{resource.description}</p>
                 </CardContent>
                 <CardFooter className="justify-center mt-auto">
-                  <Button className="w-full">{resource.action}</Button>
+                  <Button variant="secondary" size="sm" className="w-full">{resource.action}</Button>
                 </CardFooter>
               </Card>
             );
