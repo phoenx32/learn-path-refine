@@ -37,7 +37,7 @@ const resources = [
 
 const ResourceCards = () => {
   return (
-    <section id="key-resources" className="py-12">
+    <section id="key-resources" className="pt-8 pb-12 bg-muted/20">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl font-bold text-foreground mb-8">Explore Key Resources</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
