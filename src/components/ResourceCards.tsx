@@ -37,25 +37,25 @@ const resources = [
 
 const ResourceCards = () => {
   return (
-    <section id="key-resources" className="py-12 bg-muted/30">
+    <section id="key-resources" className="py-16 mt-8">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-foreground mb-8">Explore Key Resources</h2>
+        <h2 className="text-2xl font-bold text-foreground mb-8">Explore Key Resources</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           {resources.map((resource) => {
             const Icon = resource.icon;
             return (
               <Card 
                 key={resource.title}
-                className="hover:shadow-lg transition-all hover:scale-105 duration-300 flex flex-col"
+                className="hover:shadow-lg transition-all duration-300 flex flex-col"
               >
-                <CardHeader className="text-center pb-4">
-                  <div className="mx-auto w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                    <Icon className="h-8 w-8 text-primary" />
+                <CardHeader className="text-center pb-3">
+                  <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+                    <Icon className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-lg min-h-[3.5rem] flex items-center justify-center">{resource.title}</h3>
+                  <h3 className="font-semibold text-base min-h-[3rem] flex items-center justify-center">{resource.title}</h3>
                 </CardHeader>
                 <CardContent className="text-center pb-4 flex-grow">
-                  <p className="text-sm text-muted-foreground min-h-[4rem]">{resource.description}</p>
+                  <p className="text-sm text-muted-foreground min-h-[3.5rem]">{resource.description}</p>
                 </CardContent>
                 <CardFooter className="justify-center mt-auto">
                   <Button variant="secondary" size="sm" className="w-full">{resource.action}</Button>
