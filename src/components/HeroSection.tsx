@@ -38,7 +38,7 @@ const HeroSection = () => {
           
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button size="lg" className="gap-2 h-14 px-10 text-base mb-6">
+              <Button size="lg" className="gap-2 h-14 px-10 text-xl font-semibold mb-6">
                 <BookOpen className="h-5 w-5" />
                 Read Online
                 <ChevronDown className="h-4 w-4" />
