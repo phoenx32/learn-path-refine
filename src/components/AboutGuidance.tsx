@@ -4,8 +4,8 @@ import { FileText, Users, BookMarked, Archive } from "lucide-react";
 
 const aboutLinks = [
   {
-    title: "About the Guidance",
-    description: "Learn about the project's history and goals",
+    title: "About Us",
+    description: "Learn about the development team",
     icon: FileText,
     href: "#about",
   },
