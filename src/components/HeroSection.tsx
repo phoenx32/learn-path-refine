@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
-import { FileDown, BookOpen, Archive, ChevronDown } from "lucide-react";
+import { FileDown, BookOpen, ChevronDown } from "lucide-react";
 const chapters = [{
   number: 1,
   title: "Introduction"
@@ -53,16 +53,10 @@ Digital Learning Guidance</h1>
             </DropdownMenuContent>
           </DropdownMenu>
           
-          <div className="flex flex-wrap gap-3 justify-center items-center">
+          <div className="flex justify-center">
             <Button size="lg" variant="outline" className="gap-2">
               <FileDown className="h-5 w-5" />
               Download PDF
-            </Button>
-            <Button size="lg" variant="outline" className="gap-2" asChild>
-              <a href="#">
-                <Archive className="h-5 w-5" />
-                View 2022 Version
-              </a>
             </Button>
           </div>
         </div>
