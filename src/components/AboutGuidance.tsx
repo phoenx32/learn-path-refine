@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { FileText, Users, BookMarked } from "lucide-react";
+import { FileText, Users, BookMarked, Archive } from "lucide-react";
 
 const aboutLinks = [
   {
@@ -21,6 +21,12 @@ const aboutLinks = [
     icon: Users,
     href: "#glossary",
   },
+  {
+    title: "View 2022 Version",
+    description: "Browse the previous edition",
+    icon: Archive,
+    href: "#",
+  },
 ];
 
 const AboutGuidance = () => {
@@ -28,7 +34,7 @@ const AboutGuidance = () => {
     <section className="py-8 bg-background">
       <div className="container mx-auto px-4">
         <h3 className="text-xl font-semibold text-foreground mb-4">About the Guidance</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {aboutLinks.map((link) => {
             const Icon = link.icon;
             return (
